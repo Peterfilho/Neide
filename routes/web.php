@@ -11,15 +11,15 @@
 |
 */
 
-Route::get('/', function (){
+  Route::get('/', function (){
     return view('welcome');
 });
 
 Route::group(["prefix" => "pessoas"], function () {
   Route::get("/", "PessoasController@index");
-  Route::get("/novo", "PessoasController@novoView");
+  Route::get("/create", "PessoasController@novoView");
   Route::post('/store', 'PessoasController@store');
-  Route::get('/{id}/editar', 'PessoasController@editarView');
+  Route::get('/{id}/edit', 'PessoasController@editarView');
   Route::get('/{id}/excluir', 'PessoasController@excluirView');
   Route::get('/{id}/destroy', 'PessoasController@destroy');
   Route::post('/update', 'PessoasController@update');
@@ -35,3 +35,7 @@ Route::group(["prefix" => "pessoas"], function () {
 //Route::group(['prefix' => 'pessoas'], function () {
 //  Route::get('/', 'PessoasController@index');
 //});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

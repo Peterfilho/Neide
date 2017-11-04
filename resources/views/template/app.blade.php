@@ -30,7 +30,7 @@ main {
     <div class="nav-wrapper purple container">
       <a href="#" class="brand-logo"><i class="material-icons left">content_cut</i> Neide Cabeleireira</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="{{ url('pessoas/novo') }}">Cadastrar Cliente</a></li>
+        <li><a href="{{ url('pessoas/create') }}">Cadastrar Cliente</a></li>
           <li><a href="{{ url('pessoas') }}">Agenda de Clientes</a></li>
       </ul>
     </div>

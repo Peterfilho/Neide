@@ -25,7 +25,7 @@
                 <ul>
                   <li><a class="btn-floating btn-small waves-effect waves-light red darken-2 right" href="{{ url("/pessoas/$pessoa->id/excluir") }}">
                     <i class="material-icons">delete</i></a></li>
-                  <li><a class="btn-floating btn-small waves-effect waves-light blue darken-2 right" href="{{ url("/pessoas/$pessoa->id/editar") }}">
+                  <li><a class="btn-floating btn-small waves-effect waves-light blue darken-2 right" href="{{ url("/pessoas/$pessoa->id/edit") }}">
                     <i class="material-icons">mode_edit</i></a></li>
                 </ul>
               </div>
