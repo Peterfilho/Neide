@@ -4,7 +4,12 @@
 @endsection
 @section('content')
 
-  <h2>Editar contato </h2>
+  <br>
+  <span class="flow-text">Editar contato</span>
+  <br>
+  <br>
+  <div class="divider"></div>
+  <br>
 
   <div class="row">
     <form class="col s6" action="{{ url('/pessoas/update')}}" method="post">

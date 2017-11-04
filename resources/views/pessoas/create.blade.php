@@ -7,7 +7,10 @@
 @section('content')
 
 
-  <h3  class="center"> Cadastrar novo contato </h3>
+  <span class="flow-text">Cadastrar um novo contato</span>
+  <br>
+  <br>
+  <div class="divider"></div>
 
   <div class="row">
     <form class="col s6" action="{{ url('/pessoas/store')}}" method="post">

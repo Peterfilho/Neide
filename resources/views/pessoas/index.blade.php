@@ -5,9 +5,12 @@
 @endsection
 
 @section('content')
-  <h2 class="center">Contatos</h2>
-<hr>
-<br>
+  <br>
+  <span class="flow-text">Lista de contatos</span>
+  <br>
+  <br>
+  <div class="divider"></div>
+  <br>
   <div class="row container">
     @foreach ($pessoas as $pessoa)
       <div class="col s4">

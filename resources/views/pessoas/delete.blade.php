@@ -3,8 +3,11 @@
   Deletar contato
 @endsection
 @section('content')
-  <h2 class="center"> Excluir pessoa </h2>
-  <hr>
+  <br>
+  <span class="flow-text">Excluir contato</span>
+  <br>
+  <br>
+  <div class="divider"></div>
   <br>
   <div class="row">
 
