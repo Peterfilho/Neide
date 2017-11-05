@@ -15,4 +15,17 @@ class TelefonesController extends Controller
         return "Erro: " . $e->getMessage();
       }
     }
+
+    public function editarView ($id)
+    {
+      return view('telefones.edit', [
+        'telefone' => $this->getTelefone($id)
+      ]);
+    }
+
+
+      protected function getTelefone($id)
+      {
+          return $this->telefone->find($id);
+      }
 }

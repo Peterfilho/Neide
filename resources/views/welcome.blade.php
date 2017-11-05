@@ -10,28 +10,28 @@
         <li>
           <img src="{!! asset('img/slide1.jpg') !!}"> <!-- random image -->
           <div class="caption center-align">
-            <h3>This is our big Tagline!</h3>
+            <h3>Solte a beleza dentro de você</h3>
             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
           </div>
         </li>
         <li>
-          <img src="{!! asset('img/slide2.jpg') !!}"> <!-- random image -->
-          <div class="caption left-align">
-            <h3>Left Aligned Caption</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-          </div>
-        </li>
-        <li>
-          <img src="{!! asset('img/slide3.jpg') !!}"> <!-- random image -->
+          <img src="{!! asset('img/slide2.png') !!}"> <!-- random image -->
           <div class="caption right-align">
-            <h3>Right Aligned Caption</h3>
+            <h3>Seu estilo, sua escolha – um verdadeiro toque</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="{!! asset('img/slide3.png') !!}"> <!-- random image -->
+          <div class="caption right-align">
+            <h3>Experiência de Vida Com Cor</h3>
             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
           </div>
         </li>
         <li>
           <img src="{!! asset('img/slide4.jpg') !!}"> <!-- random image -->
           <div class="caption center-align">
-            <h3>This is our big Tagline!</h3>
+            <h3>Fazendo você e seu cabelo brilhar</h3>
             <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
           </div>
         </li>

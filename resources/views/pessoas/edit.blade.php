@@ -22,9 +22,11 @@
         <label for="nome">Nome</label>
       </div>
       <div class="col s12">
-        <button class="waves-effect waves-light btn-large right">Salvar</button>
+        <button class="btn purple accent-3 waves-effect waves-purple right">Salvar</button>
       </div>
     </form>
+    <!-- FORMULARIO PARA EDITAR TELEFONE -->
+
 
       <div class="col s3 push-s1">
         <div class="card purple accent-2" style="min-height: 200px">

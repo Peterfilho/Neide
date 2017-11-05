@@ -27,15 +27,6 @@ Route::group(["prefix" => "pessoas"], function () {
 
   });
 
-//Route::get("/", function () {
-//    return view("template.app");
-//});
-
-
-//Route::group(['prefix' => 'pessoas'], function () {
-//  Route::get('/', 'PessoasController@index');
-//});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

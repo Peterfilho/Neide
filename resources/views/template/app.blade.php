@@ -27,7 +27,7 @@ main {
 <body>
 
   <nav class="purple">
-    <div class="nav-wrapper purple container">
+    <div class="nav-wrapper container">
       <a href="{{ url('/') }}" class="brand-logo"><i class="material-icons left">content_cut</i> Neide Cabeleireira</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
 

@@ -23,12 +23,12 @@
               </strong>
 
 <div class="right">
-              <div class="fixed-action-btn horizontal" >
+              <div class="fixed-action-btn horizontal">
                 <a class="btn-floating red btn-small"><i class="largue material-icons">menu</i></a>
                 <ul>
-                  <li><a class="btn-floating btn-small waves-effect waves-light red darken-2 right" href="{{ url("/pessoas/$pessoa->id/excluir") }}">
+                  <li><a class="btn-floating btn-small waves-effect waves-light red darken-2" href="{{ url("/pessoas/$pessoa->id/excluir") }}">
                     <i class="material-icons">delete</i></a></li>
-                  <li><a class="btn-floating btn-small waves-effect waves-light blue darken-2 right" href="{{ url("/pessoas/$pessoa->id/edit") }}">
+                  <li><a class="btn-floating btn-small waves-effect waves-light blue darken-2" href="{{ url("/pessoas/$pessoa->id/edit") }}">
                     <i class="material-icons">mode_edit</i></a></li>
                 </ul>
               </div>
