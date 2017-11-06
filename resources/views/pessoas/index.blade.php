@@ -6,7 +6,7 @@
 
 @section('content')
   <br>
-  <span class="flow-text">Lista de contatos</span>
+  <span class="flow-text" style="margin-left: 30px;">Lista de contatos</span>
   <br>
   <br>
   <div class="divider"></div>
@@ -24,7 +24,7 @@
 
 <div class="right">
               <div class="fixed-action-btn horizontal">
-                <a class="btn-floating red btn-small"><i class="largue material-icons">menu</i></a>
+                <a class="btn-floating purple accent-3 lighten-1 btn-small"><i class="largue material-icons">menu</i></a>
                 <ul>
                   <li><a class="btn-floating btn-small waves-effect waves-light red darken-2" href="{{ url("/pessoas/$pessoa->id/excluir") }}">
                     <i class="material-icons">delete</i></a></li>

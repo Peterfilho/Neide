@@ -5,7 +5,7 @@
 @section('content')
 
   <br>
-  <span class="flow-text">Editar contato</span>
+  <span class="flow-text" style="margin-left: 30px;">Editar contato</span>
   <br>
   <br>
   <div class="divider"></div>

@@ -6,8 +6,8 @@
 
 @section('content')
 
-
-  <span class="flow-text">Cadastrar um novo contato</span>
+  <br>
+  <span class="flow-text" style="margin-left: 30px;">Cadastrar um novo contato</span>
   <br>
   <br>
   <div class="divider"></div>
@@ -53,7 +53,7 @@
       </div>
 
       <div class="col s12">
-      <button class="waves-effect waves-light btn-large right"> Salvar</button>
+      <button class="btn purple accent-3 waves-effect waves-purple right"> Salvar</button>
     </div>
     </form>
 

@@ -37,28 +37,27 @@ main {
           <li><a href="{{ route('register') }}">Register</a></li>
         @else
         <!-- Autenticado -->
-          <li><a href="{{ url('pessoas/create') }}">Cadastrar Cliente</a></li>
-          <li><a href="{{ url('pessoas') }}">Agenda de Clientes</a></li>
+          <li><a href="{{ url('pessoas/create') }}"><i class="material-icons left">person_add</i> Cadastrar Contato</a></li>
+          <li><a href="{{ url('pessoas') }}"><i class="material-icons left">view_list</i>Agenda de Contatos</a></li>
 
           <!-- LOGOUT -->
 
           <li>
             <a href="{{ route('logout') }}" onclick="event.preventDefault();
             document.getElementById('logout-form').submit();">
-            logout
+            <i class="material-icons left">exit_to_app</i>logout
           </a>
 
           <!-- Bem vindo do usuário -->
 
         </li>
         <li>
-          <div class="chip" style="margin-top: 18px;">
+          <div class="chip">
             Bem vindo {{ Auth::user()->name }}
           </div>
         </li>
 
-        <!-- Ação para logar -->
-
+    <!-- Ação para logar -->
         <li>
           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
             {{ csrf_field() }}

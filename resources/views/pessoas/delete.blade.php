@@ -4,7 +4,7 @@
 @endsection
 @section('content')
   <br>
-  <span class="flow-text">Excluir contato</span>
+  <span class="flow-text" style="margin-left: 30px;">Excluir contato</span>
   <br>
   <br>
   <div class="divider"></div>

@@ -11,13 +11,16 @@
 |
 */
 
+
   Route::get('/', function (){
     return view('welcome');
 });
 
+
+
 Route::group(["prefix" => "pessoas"], function () {
-  Route::get("/", "PessoasController@index");
-  Route::get("/create", "PessoasController@novoView");
+  Route::get('/', 'PessoasController@index');
+  Route::get('/create', 'PessoasController@novoView');
   Route::post('/store', 'PessoasController@store');
   Route::get('/{id}/edit', 'PessoasController@editarView');
   Route::get('/{id}/excluir', 'PessoasController@excluirView');
@@ -27,6 +30,6 @@ Route::group(["prefix" => "pessoas"], function () {
 
   });
 
-Auth::routes();
+  Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+  Route::get('/home', 'HomeController@index')->name('home');
