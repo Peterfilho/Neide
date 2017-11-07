@@ -49,20 +49,7 @@ crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 @yield('script')
 <!-- SCRIPT PARA FORMULARIO DE CADASTRO -->
-<script>
-// Quando clica no campo de texto ele sobe e fica pequeno
-$(document).ready(function() {
-  $('select').material_select();
-});
 
-// Slides
-$(document).ready(function(){
-     $('.slider').slider();
-   });
-
-   //MENU DROPDOWN PARA MOBILE
-     $(".button-collapse").sideNav();
-</script>
-
+{!! Html::script('js/application.js') !!}
 </body>
 </html>

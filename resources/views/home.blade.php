@@ -28,7 +28,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="right">
+    <div class="right ">
       <img class="responsive-img" src="{!! asset('img/logo.png') !!}">
     </div>
   </div>
