@@ -12,7 +12,7 @@
   <br>
 
   <div class="row">
-    <form class="col s12 m12 l6" action="{{ url('/pessoas/update')}}" method="post">
+    <form class="col s6" action="{{ url('/pessoas/update')}}" method="post">
       <!--TOKEN-->
       {{csrf_field()}}
       <input type="hidden" name="id" value="{{ $pessoa->id }}">
@@ -28,7 +28,7 @@
     <!-- FORMULARIO PARA EDITAR TELEFONE -->
 
 
-      <div class="col s12 m6 l3">
+      <div class="col s3 push-s1">
         <div class="card purple accent-2" style="min-height: 200px">
           <div class="card-content white-text">
             <span class="card-title">
