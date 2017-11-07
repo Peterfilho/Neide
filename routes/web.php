@@ -18,7 +18,7 @@
 
 
 
-Route::group(["prefix" => "pessoas"], function () {
+Route::group(["prefix" => "pessoas", 'middleware' => 'auth'], function () {
   Route::get('/', 'PessoasController@index');
   Route::get('/create', 'PessoasController@novoView');
   Route::post('/store', 'PessoasController@store');

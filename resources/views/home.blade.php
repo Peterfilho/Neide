@@ -1,5 +1,7 @@
 @extends('template.app')
-
+@section('title')
+  Administrativo - Início
+@endsection
 @section('content')
   <div class="container">
     <br>
@@ -21,13 +23,13 @@
     <i class="close material-icons">close</i>
   </div>
 
-    
+
 
     </div>
   </div>
   <div class="row">
     <div class="right">
-      <img src="{!! asset('img/logo.png') !!}">
+      <img class="responsive-img" src="{!! asset('img/logo.png') !!}">
     </div>
   </div>
 
