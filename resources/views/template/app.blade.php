@@ -26,7 +26,7 @@ main {
 
 <body>
 
-  @include ('template.nav');
+  @include ('template.nav')
 
 <main>
 

@@ -13,7 +13,7 @@
   <br>
   <div class="row container">
     @foreach ($pessoas as $pessoa)
-      <div class="col s12 m6 l4">
+      <div class="col s12 m6 l6">
         <div class="card purple accent-2" style="min-height: 200px">
           <div class="card-content white-text">
             <span class="card-title">

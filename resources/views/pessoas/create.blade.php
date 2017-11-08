@@ -13,11 +13,11 @@
   <div class="divider"></div>
 
   <div class="row">
-    <form class="col s6" action="{{ url('/pessoas/store')}}" method="post">
+    <form class="col s12 m12 l6" action="{{ url('/pessoas/store')}}" method="post">
       <!--TOKEN-->
       {{csrf_field()}}
 
-      <div class="input-field col s6">
+      <div class="input-field col s12 m12 l6">
         <i class="material-icons prefix">account_circle</i>
         <input id="nome" name="nome" type="text">
         <label for="nome">Nome</label>
@@ -40,13 +40,13 @@
       </div>
 -->
 
-      <div class="input-field col s2">
+      <div class="input-field col s4 m4 l2">
         <i class="material-icons prefix">phone</i>
         <input id="icon_telephone" name="ddd" type="tel">
         <label for="icon_telephone">DDD</label>
       </div>
 
-      <div class="input-field col s4">
+      <div class="input-field col  s4  m4 l2">
         <i class="material-icons prefix">phone</i>
         <input id="icon_telephone" name="telefone" type="tel">
         <label for="icon_telephone">Telefone</label>
@@ -57,7 +57,7 @@
     </div>
     </form>
 
-    <div class="col s6">
+    <div class="col s12 m12 l6">
 
       <img class="right "src="{!! asset('img/logo.png') !!}">
       </div>

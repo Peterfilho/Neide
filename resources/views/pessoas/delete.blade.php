@@ -11,7 +11,7 @@
   <br>
   <div class="row">
 
-    <div class="col s4 push-s1">
+    <div class="col s12 m10 l4 push-s1">
       <div class="card purple darken-1" style="min-height: 180px">
         <div class="card-content white-text">
           <span class="card-title">
@@ -31,7 +31,7 @@
           </div>
         </div>
 
-        <div class="col s3 push-s1">
+        <div class="col s12 m10 l3 push-s1">
           <div class="card purple accent-2" style="min-height: 200px">
             <div class="card-content white-text">
               <span class="card-title">
