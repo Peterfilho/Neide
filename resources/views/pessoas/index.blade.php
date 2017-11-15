@@ -26,9 +26,9 @@
               <div class="fixed-action-btn horizontal">
                 <a class="btn-floating purple accent-3 lighten-1 btn-small"><i class="largue material-icons">menu</i></a>
                 <ul>
-                  <li><a class="btn-floating btn-small waves-effect waves-light red lighten-2" href="{{ url("/pessoas/$pessoa->id/excluir") }}">
+                  <li><a class="btn-floating btn-small waves-effect waves-light red lighten-2" href="{{ route('pessoa.show', ['model' => $pessoa]) }}">
                     <i class="material-icons">delete</i></a></li>
-                  <li><a class="btn-floating btn-small waves-effect waves-light blue lighten-2" href="{{ url("/pessoas/$pessoa->id/edit") }}">
+                  <li><a class="btn-floating btn-small waves-effect waves-light blue lighten-2" href="{{ route('pessoa.edit', ['model' => $pessoa]) }}">
                     <i class="material-icons">mode_edit</i></a></li>
                 </ul>
               </div>

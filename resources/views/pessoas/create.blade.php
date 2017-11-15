@@ -13,7 +13,7 @@
   <div class="divider"></div>
 
   <div class="row">
-    <form class="col s12 m12 l6" action="{{ url('/pessoas/store')}}" method="post">
+    <form class="col s12 m12 l6" action="{{ route('pessoa.save')}}" method="post">
       <!--TOKEN-->
       {{csrf_field()}}
 

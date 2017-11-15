@@ -14,8 +14,8 @@
             -->
           @else
           <!-- Autenticado -->
-            <li><a href="{{ url('pessoas/create') }}"><i class="material-icons left">person_add</i> Cadastrar Contato</a></li>
-            <li><a href="{{ url('pessoas') }}"><i class="material-icons left">view_list</i>Agenda de Contatos</a></li>
+            <li><a href="{{ route('pessoa.new') }}"><i class="material-icons left">person_add</i> Cadastrar Contato</a></li>
+            <li><a href="{{ route('pessoa.index') }}"><i class="material-icons left">view_list</i>Agenda de Contatos</a></li>
 
             <!-- LOGOUT -->
 

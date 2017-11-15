@@ -12,19 +12,36 @@
   <br>
 
   <div class="row">
-    <form class="col s12 m12 l6" action="{{ url('/pessoas/update')}}" method="post">
+    {!! Form::open(['method' => 'PUT', 'route' => ['pessoa.update' , 'model' => $model]]) !!}
       <!--TOKEN-->
-      {{csrf_field()}}
-      <input type="hidden" name="id" value="{{ $pessoa->id }}">
+      <input type="hidden" name="id" value="{{ $model->id }}">
       <div class="input-field col s12">
-        <i class="material-icons prefix">account_circle</i>
-        <input id="nome" name="nome"  type="text" value="{{ $pessoa->nome }}">
+        <i class="material-icons prefix">mode_edit</i>
+        <input id="nome" name="nome"  type="text" value="{{ $model->nome }}">
         <label for="nome">Nome</label>
       </div>
+
+
+    @foreach($model->telefones as $telefone)
+
+      <div class="input-field col s12 m4 l3">
+        <i class="material-icons prefix">mode_edit</i>
+        <input id="ddd" name="ddd"  type="text" value="{{ $telefone->ddd }}">
+        <label for="ddd">DDD</label>
+      </div>
+
+      <div class="input-field col s12 m8 l9">
+        <i class="material-icons prefix">mode_edit</i>
+        <input id="telefone" name="telefone"  type="text" value="{{ $telefone->telefone}}">
+        <label for="telefone">Telefone</label>
+      </div>
+    @endforeach
+
+
       <div class="col s12">
         <button class="btn purple accent-3 waves-effect waves-purple right">Salvar</button>
       </div>
-    </form>
+    {!! Form::close() !!}
     <!-- FORMULARIO PARA EDITAR TELEFONE -->
 
 
@@ -33,14 +50,14 @@
           <div class="card-content white-text">
             <span class="card-title">
               <strong>
-                {{$pessoa->nome}}
+                {{$model->nome}}
               </strong>
             </span>
             <br>
             <hr>
             <strong>Telefones:</strong>
             <br>
-            @foreach($pessoa->telefones as $telefone)
+            @foreach($model->telefones as $telefone)
               ( {{$telefone->ddd}} ) -
               {{$telefone->telefone}}<br>
             @endforeach

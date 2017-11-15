@@ -24,7 +24,7 @@ class TelefonesController extends Controller
     }
 
 
-      protected function getTelefone($id)
+      public function getTelefone($id)
       {
           return $this->telefone->find($id);
       }

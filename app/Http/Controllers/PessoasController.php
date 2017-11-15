@@ -6,7 +6,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Pessoa;
 use App\Models\Telefone;
-
+use Illuminate\Support\Facades\DB;
 class PessoasController extends Controller
 {
 
@@ -27,13 +27,14 @@ class PessoasController extends Controller
     ]);
   }
 
-  public function novoView ()
+  public function create ()
   {
     return View ('pessoas.create');
   }
 
-  public function store (Request $request)
+  public function store(Request $request)
   {
+
     $pessoa = Pessoa::create($request->all());
     if ($request->ddd && $request->telefone) {
 
@@ -47,39 +48,31 @@ class PessoasController extends Controller
     return redirect('/pessoas')->with('message', 'Pessoa cadastrada com sucesso!');
   }
 
-  public function excluirView ($id)
+  public function show (Pessoa $model)
   {
-    return view('pessoas.delete', [
-      'pessoa' => $this->getPessoa($id)
-    ]);
+    return view('pessoas.show', compact('model'));
   }
 
-  public function destroy ($id)
+  public function destroy (Pessoa $model)
   {
-    $this->getPessoa($id)->delete();
+    Pessoa::destroy($model->id);
     return redirect('pessoas')->with('Sucess', 'Contato excluido com sucesso!');
-
-
-
   }
 
-  public function editarView ($id)
+  public function edit (Pessoa $model)
   {
-    return view('pessoas.edit', [
-      'pessoa' => $this->getPessoa($id)
-    ]);
+    return view('pessoas.edit', compact('model'));
   }
 
-  protected function getPessoa($id)
+  public function update(Request $request, Pessoa $model)
   {
-      return $this->pessoa->find($id);
-  }
+    $fieldsUser = $request->only('nome');
+    $fieldsPhone = $request->only('telefone','ddd');
+    $phone = Telefone::where('pessoa_id', '=' ,$model->id)->first();
 
-  public function update(Request $request)
-  {
-    $pessoa = $this->getPessoa($request->id);
-    $pessoa->update($request->all());
+    $model->fill($fieldsUser)->save();
+    $phone->fill($fieldsPhone)->save();
 
-    return redirect('/pessoas');
+ return redirect('/pessoas');
   }
 }

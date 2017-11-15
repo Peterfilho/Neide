@@ -19,13 +19,13 @@
 
 
 Route::group(["prefix" => "pessoas", 'middleware' => 'auth'], function () {
-  Route::get('/', 'PessoasController@index');
-  Route::get('/create', 'PessoasController@novoView');
-  Route::post('/store', 'PessoasController@store');
-  Route::get('/{id}/edit', 'PessoasController@editarView');
-  Route::get('/{id}/excluir', 'PessoasController@excluirView');
-  Route::get('/{id}/destroy', 'PessoasController@destroy');
-  Route::post('/update', 'PessoasController@update');
+  Route::get('/', 'PessoasController@index')->name('pessoa.index');
+  Route::get('/novo', 'PessoasController@create')->name('pessoa.new');
+  Route::post('/', 'PessoasController@store')->name('pessoa.save');
+  Route::get('/{model}/edit', 'PessoasController@edit')->name('pessoa.edit');
+  Route::get('/{model}', 'PessoasController@show')->name('pessoa.show');
+  Route::delete('/{model}', 'PessoasController@destroy')->name('pessoa.delete');
+  Route::put('/{model}', 'PessoasController@update')->name('pessoa.update');
 
 
   });
