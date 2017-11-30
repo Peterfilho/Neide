@@ -13,6 +13,9 @@ class PessoaTest extends TestCase
     {
       parent::setUp();
       factory(Pessoa::class)->create();
+      $user = User::first();
+      $this->be($user);
+      $this->withoutMiddleware(\App\Http\Middleware\VerifyCsrfToken::class);
     }
 
     public function testIndex()
