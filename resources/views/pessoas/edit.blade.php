@@ -15,32 +15,38 @@
     {!! Form::open(['method' => 'PUT', 'route' => ['pessoa.update' , 'model' => $model]]) !!}
       <!--TOKEN-->
       <input type="hidden" name="id" value="{{ $model->id }}">
-      <div class="input-field col s12">
+      <div class="input-field col s12 m12 l6">
         <i class="material-icons prefix">mode_edit</i>
         <input id="nome" name="nome"  type="text" value="{{ $model->nome }}">
         <label for="nome">Nome</label>
       </div>
 
-
+<div class="row">
     @foreach($model->telefones as $telefone)
 
-      <div class="input-field col s12 m4 l3">
+      <div class="input-field col s12 m4 l2">
         <i class="material-icons prefix">mode_edit</i>
         <input id="ddd" name="ddd"  type="text" value="{{ $telefone->ddd }}">
         <label for="ddd">DDD</label>
       </div>
 
-      <div class="input-field col s12 m8 l9">
+      <div class="input-field col s12 m8 l4">
         <i class="material-icons prefix">mode_edit</i>
         <input id="telefone" name="telefone"  type="text" value="{{ $telefone->telefone}}">
         <label for="telefone">Telefone</label>
       </div>
     @endforeach
-
-
-      <div class="col s12">
+</div>
+<div class="row">
+      <div class="col s4 l2 right">
         <button class="btn purple accent-3 waves-effect waves-purple right">Salvar</button>
       </div>
+
+      <div class="col s4 l2 right" style="margin-right: 5px;">
+          <a class="btn purple accent-3 waves-effect waves-purple" href="{{ url("/pessoas") }}"> Cancelar</a>
+      </div>
+</div>
+
     {!! Form::close() !!}
     <!-- FORMULARIO PARA EDITAR TELEFONE -->
 
