@@ -30,4 +30,6 @@ class HomeTest extends TestCase
     $response->assertStatus(200);
   }
 
+
+
 }
