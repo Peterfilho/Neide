@@ -23,10 +23,4 @@ class PessoaTest extends TestCase
         $response->assertStatus(200);
     }
 
-    public function testPessoa()
-    {
-        $model = factory(Pessoa::class)->make();
-        $this->post(route('pessoa.index'), $model->toArray())->assertRedirect(route('home'));
-        $this->assertDatabaseHas('pessoa', $model->toArray());
-    }
 }

@@ -1,7 +1,9 @@
 <html>
 <head>
   <title>@yield('title')</title>
-  <link rel="shortcut icon" href="{!! asset('img/favicon.png') !!}" />
+
+<link rel='shortcut icon' type='image/x-icon' src="{!! asset('img/favicon.png') !!}" />
+
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
